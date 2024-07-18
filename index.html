@@ -12,19 +12,63 @@
     <header class="w-full shadow h-14">
         <h1 class="font-bold text-4xl p-2">Flatdango</h1>
     </header>
-
-    <main class="flex flex-row">
+        <div class="">
+            <button id="btnAdd" class="flex gap-2 m-4 bg-blue-400 p-2 border rounded-xl text-white"><span class="material-icons">add</span> Add films</button>
+        </div>
+    <section class="flex flex-row">
         <aside class="w-1/4" id="aside">
             <p class="flex flex-col w-80 max-h-max m-2 bg-gray-200 rounded-2xl" id="firtFilm"></p>
         </aside>
-
+        
         <div id="main" class="" >
             <ul class="grid grid-cols-4 h-2/4" id="card-films">
 
             </ul>
         </div>
+    </section>
+        
+    <!--Section of the formulaire To POST somthing to our data base-->
+    <section class=" fixed w-full h-screen bg-neutral-800/40 top-0cm-auto px-80 hidden" id="formSection">
+        <form  action="" method="post">
+            <div class="flex flex-col gap-3 w-1/2 border rounded-xl m-auto p-6">
+                <div class="flex flex-row gap-4 justify-between w-full">
+                    <label for="title">Title</label>
+                    <input class="border rounded  px-4 outline-none w-72" type="text" placeholder="Title here"> 
+                </div>
 
-    </main>
+                <div class="flex flex-row gap-4 justify-between w-full">
+                    <label for="runtime">Runtime</label>
+                    <input class="border rounded px-4 outline-none w-72" type="number" placeholder="enter the runtime">
+                </div>
+
+                <div class="flex flex-row gap-4 justify-between w-full">
+                    <label for="capacity">Capacity</label>
+                    <input class="border rounded  px-4 outline-none w-72" type="number">
+                </div>
+
+                <div class="flex flex-row gap-4 justify-between w-full">
+                    <label for="showtime">Time</label>
+                    <input class="border rounded  px-4 outline-none w-72" type="datetime" name="showtime id="">
+                </div>
+
+                <div class="flex flex-row gap-4 justify-between w-full">
+                    <label for="ticketsold">TicketSold</label>
+                    <input class="border rounded  px-4 outline-none w-72" type="number">
+                </div>
+
+                <div class="flex flex-row gap-4 justify-between w-full">
+                    <label for="description">Description</label>
+                    <input class="border rounded  px-4 outline-none w-72" type="text">
+                </div>
+
+                <div class="flex flex-row gap-4 justify-between w-full">
+                    <label for="poster">Image</label>
+                    <input class="border rounded px-4 outline-none w-72" type="url" name="poster" id=""> 
+                </div>
+            </div>
+            
+        </form>
+    </section>
   <script src="./index.js"></script>  
 </body>
 </html>

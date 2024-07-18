@@ -1,7 +1,20 @@
 const container_film = document.querySelector("#card-films") 
 const firtFilm = document.querySelector("#firtFilm");
+const addFilms = document.querySelector("#btnAdd");
 const aside = document.querySelector("#aside");
+const formFilms = document.querySelector("#formSection");
 
+//function hide form
+function hideSection(){
+    formFilms.classList.add("hidden")
+}
+
+function showSection(){
+    formFilms.classList.remove("hidden");
+}
+
+//button show formulaire film
+addFilms.addEventListener("click", showSection);
 
 //Dom renderFunction
 function renderFilmsCard(films){
