@@ -8,16 +8,22 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>FlatDango</title>
 </head>
-<body>
+<body class="font-serif">
     <header class="w-full shadow h-14">
         <h1 class="font-bold text-4xl p-2">Flatdango</h1>
     </header>
-    <main class="h-full w-full ">
-        <section class="m-auto" id="container-films">
-            <ul class="grid grid-cols-4" id="card-films">
+
+    <main class="flex flex-row">
+        <aside class="w-1/4" id="aside">
+            <p class="flex flex-col w-80 max-h-max m-2 bg-gray-200 rounded-2xl" id="firtFilm"></p>
+        </aside>
+
+        <div id="main" class="" >
+            <ul class="grid grid-cols-4 h-2/4" id="card-films">
 
             </ul>
-        </section>
+        </div>
+
     </main>
   <script src="./index.js"></script>  
 </body>
